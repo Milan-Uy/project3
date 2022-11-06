@@ -30,7 +30,7 @@ while True:
         dest = "\033[1;32m%s\033[0m" %dest
         print("API Status: " + str(json_status) + " = A successful route call.\n")
         print("=============================================")
-        # Outputs the data into a table
+        # Outputs the information into a table
         myTable.add_row([(orig), (dest), str(json_data["route"]["distance"]), str("{:.2f}".format((json_data["route"]["distance"])*1.61)), str(json_data["route"]["fuelUsed"]), str("{:.2f}".format((json_data["route"]["fuelUsed"])*3.78))])
         print(myTable)
         print(Fore.MAGENTA)
